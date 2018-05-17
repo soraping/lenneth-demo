@@ -1,5 +1,9 @@
 ### lenneth-demo
 
+> 关于 lenneth
+
+[lenneth](https://github.com/soraping/lenneth)
+
 > 说明
 
 在 lenneth 中只做抽象出 apis , middleware, services 这三个模块， 工程目录如下:
