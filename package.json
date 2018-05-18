@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "koa-logger": "^3.2.0",
-    "lenneth": "^0.0.14"
+    "lenneth": "0.0.16"
   },
   "scripts": {
     "clean": "rm -rf lib",
