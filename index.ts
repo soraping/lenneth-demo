@@ -1,13 +1,14 @@
 import { LennethApplication, ILenneth, ServerSettings } from "lenneth";
 import * as logger from "koa-logger";
-import { UserController } from "./src/apis";
-import { Interceptor } from "./src/middleware";
+import { UserController, MiniAppController } from "./src/apis";
+import { Interceptor, OverResponse } from "./src/middleware";
 
 @ServerSettings({
-  port: 8081,
+  port: 8080,
   imports: {
-    "/apis": UserController
+    "/apis": [UserController, MiniAppController]
   },
+  response: OverResponse,
   interceptor: Interceptor
 })
 class App extends LennethApplication implements ILenneth {
